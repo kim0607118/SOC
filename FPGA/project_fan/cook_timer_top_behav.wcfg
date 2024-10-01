@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cook_timer_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cook_timer_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="4052339205001fs"></ZoomEndTime>
+      <Cursor1Time time="4052339205000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="156"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="33" />
+   <wvobject fp_name="/cook_timer_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/reset_p" type="logic">
+      <obj_property name="ElementShortName">reset_p</obj_property>
+      <obj_property name="ObjectShortName">reset_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/btn" type="array">
+      <obj_property name="ElementShortName">btn[2:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/com" type="array">
+      <obj_property name="ElementShortName">com[3:0]</obj_property>
+      <obj_property name="ObjectShortName">com[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/led_debug" type="array">
+      <obj_property name="ElementShortName">led_debug[15:0]</obj_property>
+      <obj_property name="ObjectShortName">led_debug[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/seg_7" type="array">
+      <obj_property name="ElementShortName">seg_7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg_7[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/fan_off" type="logic">
+      <obj_property name="ElementShortName">fan_off</obj_property>
+      <obj_property name="ObjectShortName">fan_off</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/clk_usec" type="logic">
+      <obj_property name="ElementShortName">clk_usec</obj_property>
+      <obj_property name="ObjectShortName">clk_usec</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/clk_msec" type="logic">
+      <obj_property name="ElementShortName">clk_msec</obj_property>
+      <obj_property name="ObjectShortName">clk_msec</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/clk_sec" type="logic">
+      <obj_property name="ElementShortName">clk_sec</obj_property>
+      <obj_property name="ObjectShortName">clk_sec</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/clk_min" type="logic">
+      <obj_property name="ElementShortName">clk_min</obj_property>
+      <obj_property name="ObjectShortName">clk_min</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/btn_start" type="logic">
+      <obj_property name="ElementShortName">btn_start</obj_property>
+      <obj_property name="ObjectShortName">btn_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/btn_sec" type="logic">
+      <obj_property name="ElementShortName">btn_sec</obj_property>
+      <obj_property name="ObjectShortName">btn_sec</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/btn_min" type="logic">
+      <obj_property name="ElementShortName">btn_min</obj_property>
+      <obj_property name="ObjectShortName">btn_min</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/set_min10" type="array">
+      <obj_property name="ElementShortName">set_min10[3:0]</obj_property>
+      <obj_property name="ObjectShortName">set_min10[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/set_min1" type="array">
+      <obj_property name="ElementShortName">set_min1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">set_min1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/set_sec10" type="array">
+      <obj_property name="ElementShortName">set_sec10[3:0]</obj_property>
+      <obj_property name="ObjectShortName">set_sec10[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/set_sec1" type="array">
+      <obj_property name="ElementShortName">set_sec1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">set_sec1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/cur_min10" type="array">
+      <obj_property name="ElementShortName">cur_min10[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_min10[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/cur_min1" type="array">
+      <obj_property name="ElementShortName">cur_min1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_min1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/cur_sec10" type="array">
+      <obj_property name="ElementShortName">cur_sec10[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_sec10[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/cur_sec1" type="array">
+      <obj_property name="ElementShortName">cur_sec1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_sec1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/dec_clk" type="logic">
+      <obj_property name="ElementShortName">dec_clk</obj_property>
+      <obj_property name="ObjectShortName">dec_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/value" type="array">
+      <obj_property name="ElementShortName">value[15:0]</obj_property>
+      <obj_property name="ObjectShortName">value[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/set_time" type="array">
+      <obj_property name="ElementShortName">set_time[15:0]</obj_property>
+      <obj_property name="ObjectShortName">set_time[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/cur_time" type="array">
+      <obj_property name="ElementShortName">cur_time[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_time[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/start_set" type="logic">
+      <obj_property name="ElementShortName">start_set</obj_property>
+      <obj_property name="ObjectShortName">start_set</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/alarm" type="logic">
+      <obj_property name="ElementShortName">alarm</obj_property>
+      <obj_property name="ObjectShortName">alarm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/alarm_delayed" type="logic">
+      <obj_property name="ElementShortName">alarm_delayed</obj_property>
+      <obj_property name="ObjectShortName">alarm_delayed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/led_reg" type="array">
+      <obj_property name="ElementShortName">led_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">led_reg[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/num_leds_off" type="array">
+      <obj_property name="ElementShortName">num_leds_off[31:0]</obj_property>
+      <obj_property name="ObjectShortName">num_leds_off[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/set_time_calc" type="array">
+      <obj_property name="ElementShortName">set_time_calc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">set_time_calc[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cook_timer_top/cur_time_calc" type="array">
+      <obj_property name="ElementShortName">cur_time_calc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_time_calc[15:0]</obj_property>
+   </wvobject>
+</wave_config>

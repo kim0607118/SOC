@@ -1,0 +1,55 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kyh/0612/0612.srcs/sources_1/new/clock_library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_div_100
+INFO: [VRFC 10-311] analyzing module clock_div_1000
+INFO: [VRFC 10-311] analyzing module sr04_div_58
+INFO: [VRFC 10-311] analyzing module clock_div_60
+INFO: [VRFC 10-311] analyzing module clock_div_10_LKM
+INFO: [VRFC 10-311] analyzing module counter_bcd_60
+INFO: [VRFC 10-311] analyzing module counter_bcd_60_clear
+INFO: [VRFC 10-311] analyzing module counter_bcd_100_clear_LHS
+INFO: [VRFC 10-311] analyzing module loadable_counter_bcd_60
+INFO: [VRFC 10-311] analyzing module loadable_down_counter_bcd_60
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kyh/0612/0612.srcs/sources_1/new/exam02_sequential_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_flip_flop_n
+INFO: [VRFC 10-311] analyzing module D_flip_flop_p
+INFO: [VRFC 10-311] analyzing module T_flip_flop_n
+INFO: [VRFC 10-311] analyzing module T_flip_flop_p
+INFO: [VRFC 10-311] analyzing module up_counter_asyc
+INFO: [VRFC 10-311] analyzing module down_counter_asyc
+INFO: [VRFC 10-311] analyzing module up_counter_p
+INFO: [VRFC 10-311] analyzing module up_counter_n
+INFO: [VRFC 10-311] analyzing module down_counter_p
+INFO: [VRFC 10-311] analyzing module down_counter_n
+INFO: [VRFC 10-311] analyzing module bcd_upcounter_p
+INFO: [VRFC 10-311] analyzing module bcd_downcount_p_PSH
+INFO: [VRFC 10-311] analyzing module up_downcount_p
+INFO: [VRFC 10-311] analyzing module BCD_up_down_counter_JBH
+INFO: [VRFC 10-311] analyzing module ring_counter
+INFO: [VRFC 10-311] analyzing module ring_counter_fnd
+INFO: [VRFC 10-311] analyzing module ring_counter_led
+INFO: [VRFC 10-311] analyzing module edge_detector_p
+INFO: [VRFC 10-311] analyzing module edge_detector_n
+INFO: [VRFC 10-311] analyzing module shift_register_SISO_n
+INFO: [VRFC 10-311] analyzing module shift_register_SISO_Nbit_n
+INFO: [VRFC 10-311] analyzing module shift_register_SISO_Nbit_msb_n
+INFO: [VRFC 10-311] analyzing module shift_register_SIPO_n
+INFO: [VRFC 10-311] analyzing module shift_register_SIPO_Nbit_n
+INFO: [VRFC 10-311] analyzing module shift_register_PISO_n
+INFO: [VRFC 10-311] analyzing module register_8bit_n
+INFO: [VRFC 10-311] analyzing module register_Nbit_n
+INFO: [VRFC 10-311] analyzing module sram_8bit_1024
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kyh/0612/0612.srcs/sources_1/new/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fnd_cntr
+INFO: [VRFC 10-311] analyzing module button_cntr
+INFO: [VRFC 10-311] analyzing module key_pad_cntr
+INFO: [VRFC 10-311] analyzing module keypad_cntr_FSM
+INFO: [VRFC 10-311] analyzing module dht11_cntr
+INFO: [VRFC 10-311] analyzing module HC_SR04_cntr_JBH
+INFO: [VRFC 10-311] analyzing module HC_SR04_cntr
+INFO: [VRFC 10-311] analyzing module pwm_100sstep
+INFO: [VRFC 10-2458] undeclared symbol pwm_freqX100, assumed default net type wire [C:/kyh/0612/0612.srcs/sources_1/new/controler.v:644]
+INFO: [VRFC 10-311] analyzing module pwm_Nstep_freq
+INFO: [VRFC 10-2458] undeclared symbol pwm_freqX100_nedge, assumed default net type wire [C:/kyh/0612/0612.srcs/sources_1/new/controler.v:703]
+INFO: [VRFC 10-311] analyzing module I2C_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kyh/0612/0612.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

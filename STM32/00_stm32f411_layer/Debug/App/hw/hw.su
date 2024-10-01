@@ -1,0 +1,2 @@
+../App/hw/hw.c:3:6:delay	16	static
+../App/hw/hw.c:8:10:millis	8	static

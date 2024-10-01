@@ -1,0 +1,684 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Aug 14 15:44:40 2024
+# Process ID: 8124
+# Current directory: C:/kyh/soc_fan/soc_fan.runs/synth_1
+# Command line: vivado.exe -log complete.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source complete.tcl
+# Log file: C:/kyh/soc_fan/soc_fan.runs/synth_1/complete.vds
+# Journal file: C:/kyh/soc_fan/soc_fan.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source complete.tcl -notrace
+Command: synth_design -top complete -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4156 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1167.617 ; gain = 227.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'complete' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/end.v:3]
+INFO: [Synth 8-6157] synthesizing module 'button_cntr' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_p' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_p' (1#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:42]
+WARNING: [Synth 8-7023] instance 'ed_clk' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'button_cntr' (2#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:1]
+WARNING: [Synth 8-7023] instance 'btn0' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/end.v:15]
+INFO: [Synth 8-6157] synthesizing module 'cook_timer_pjt' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/timer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_div_100' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:84]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_n' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_n' (3#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:63]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div_100' (4#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:84]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/timer.v:12]
+INFO: [Synth 8-6157] synthesizing module 'clock_div_1000' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:106]
+WARNING: [Synth 8-7023] instance 'ed_source' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:115]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div_1000' (5#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:106]
+WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/timer.v:13]
+WARNING: [Synth 8-7023] instance 'sec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/timer.v:15]
+WARNING: [Synth 8-7023] instance 'btn0' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/timer.v:19]
+WARNING: [Synth 8-7023] instance 'btn1' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/timer.v:20]
+WARNING: [Synth 8-7023] instance 'btn2' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/timer.v:21]
+INFO: [Synth 8-6157] synthesizing module 'counter_bcd_60' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:191]
+WARNING: [Synth 8-7023] instance 'ed_clk' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:197]
+INFO: [Synth 8-6155] done synthesizing module 'counter_bcd_60' (6#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:191]
+INFO: [Synth 8-6157] synthesizing module 'loadable_down_counter_bcd_60' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:320]
+WARNING: [Synth 8-7023] instance 'ed_clk' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:329]
+INFO: [Synth 8-6155] done synthesizing module 'loadable_down_counter_bcd_60' (7#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:320]
+WARNING: [Synth 8-7023] instance 'cur_min' of module 'loadable_down_counter_bcd_60' has 9 connections declared, but only 8 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/timer.v:37]
+INFO: [Synth 8-6157] synthesizing module 'fnd_cntr' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:45]
+INFO: [Synth 8-6157] synthesizing module 'ring_counter_fnd' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:24]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'ring_counter_fnd' (8#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:55]
+INFO: [Synth 8-6157] synthesizing module 'decoder_7seg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_7seg' (9#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'fnd_cntr' (10#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:45]
+WARNING: [Synth 8-6014] Unused sequential element alarm_reg was removed.  [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/timer.v:61]
+WARNING: [Synth 8-6014] Unused sequential element num_leds_off_reg was removed.  [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/timer.v:97]
+WARNING: [Synth 8-5788] Register fan_off_reg_reg in module cook_timer_pjt is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/timer.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'cook_timer_pjt' (11#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/timer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'control_led' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/fan_led.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pwm_100step' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:94]
+	Parameter sys_clk_freq bound to: 100000000 - type: integer 
+	Parameter pwm_freq bound to: 10000 - type: integer 
+	Parameter duty_step bound to: 100 - type: integer 
+	Parameter temp bound to: 100 - type: integer 
+	Parameter temp_half bound to: 50 - type: integer 
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:119]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_100step' (12#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:94]
+WARNING: [Synth 8-7023] instance 'btn0' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/fan_led.v:17]
+WARNING: [Synth 8-7023] instance 'btn1' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/fan_led.v:18]
+WARNING: [Synth 8-7023] instance 'btn2' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/fan_led.v:19]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/fan_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_Nstep_freq' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:137]
+	Parameter sys_clk_freq bound to: 100000000 - type: integer 
+	Parameter pwm_freq bound to: 100 - type: integer 
+	Parameter duty_step bound to: 100 - type: integer 
+	Parameter temp bound to: 10000 - type: integer 
+	Parameter temp_half bound to: 5000 - type: integer 
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:163]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_Nstep_freq' (13#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/control.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'control_led' (14#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/fan_led.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dht11_test_top' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/dht11.v:171]
+INFO: [Synth 8-6157] synthesizing module 'dht11_cntr' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/dht11.v:4]
+	Parameter S_IDLE bound to: 6'b000001 
+	Parameter S_LOW_18MS bound to: 6'b000010 
+	Parameter S_HIGH_20US bound to: 6'b000100 
+	Parameter S_LOW_80US bound to: 6'b001000 
+	Parameter S_HIGH_80US bound to: 6'b010000 
+	Parameter S_READ_DATA bound to: 6'b100000 
+	Parameter S_WAIT_PEDGE bound to: 2'b01 
+	Parameter S_WAIT_NEDGE bound to: 2'b10 
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/dht11.v:29]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/dht11.v:132]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/dht11.v:68]
+WARNING: [Synth 8-5788] Register count_usec_e_reg in module dht11_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/dht11.v:71]
+WARNING: [Synth 8-5788] Register dht11_buffer_reg in module dht11_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/dht11.v:50]
+WARNING: [Synth 8-5788] Register humidity_reg in module dht11_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/dht11.v:160]
+WARNING: [Synth 8-5788] Register temperature_reg in module dht11_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/dht11.v:161]
+INFO: [Synth 8-6155] done synthesizing module 'dht11_cntr' (15#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/dht11.v:4]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_dec' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/dht11.v:193]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_dec' (16#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/dht11.v:193]
+INFO: [Synth 8-6155] done synthesizing module 'dht11_test_top' (17#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/dht11.v:171]
+WARNING: [Synth 8-7023] instance 'dht11' of module 'dht11_test_top' has 6 connections declared, but only 5 given [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/end.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'complete' (18#1) [C:/kyh/soc_fan/soc_fan.srcs/sources_1/new/end.v:3]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[15]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[14]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[13]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[12]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[11]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[10]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[9]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[8]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[7]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1240.848 ; gain = 300.957
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1240.848 ; gain = 300.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1240.848 ; gain = 300.957
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1240.848 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/kyh/soc_fan/soc_fan.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/kyh/soc_fan/soc_fan.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/kyh/soc_fan/soc_fan.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/kyh/soc_fan/soc_fan.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/kyh/soc_fan/soc_fan.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/kyh/soc_fan/soc_fan.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/kyh/soc_fan/soc_fan.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fan_off'. [C:/kyh/soc_fan/soc_fan.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/kyh/soc_fan/soc_fan.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/kyh/soc_fan/soc_fan.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/kyh/soc_fan/soc_fan.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/complete_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/complete_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1350.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1350.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1350.168 ; gain = 410.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1350.168 ; gain = 410.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1350.168 ; gain = 410.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "led_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'brightness_level_reg' in module 'control_led'
+INFO: [Synth 8-5544] ROM "led_duty" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'brightness_level_reg' using encoding 'one-hot' in module 'control_led'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1350.168 ; gain = 410.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[1].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[2].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[3].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[4].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[5].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[6].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[7].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[8].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[9].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[10].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[11].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[12].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[13].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[14].pwm_inst'
+INFO: [Synth 8-223] decloning instance 'fan/pwm_gen[0].pwm_inst' (pwm_100step) to 'fan/pwm_gen[15].pwm_inst'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 58    
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 4     
+	                4 Bit    Registers := 12    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 79    
++---Muxes : 
+	   3 Input     40 Bit        Muxes := 6     
+	   2 Input     40 Bit        Muxes := 12    
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 7     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 51    
+	   5 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 5     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 90    
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module complete 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+Module edge_detector_p 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module button_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module edge_detector_n 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module clock_div_100 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+Module clock_div_1000 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module counter_bcd_60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module loadable_down_counter_bcd_60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+Module ring_counter_fnd 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module fnd_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module cook_timer_pjt 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module pwm_100step 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+Module control_led 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 3     
+Module dht11_cntr 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     40 Bit        Muxes := 6     
+	   2 Input     40 Bit        Muxes := 12    
+	   2 Input      6 Bit        Muxes := 3     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+Module bin_to_dec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 25    
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_cur_reg' into 'usec_clk/ed/ff_cur_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:71]
+INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_old_reg' into 'usec_clk/ed/ff_old_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:72]
+INFO: [Synth 8-4471] merging register 'sec_clk/ed_source/ff_cur_reg' into 'msec_clk/ed/ff_cur_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:71]
+INFO: [Synth 8-4471] merging register 'sec_clk/ed_source/ff_old_reg' into 'msec_clk/ed/ff_old_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:72]
+INFO: [Synth 8-4471] merging register 'btn1/ed_clk/ff_cur_reg' into 'btn0/ed_clk/ff_cur_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:50]
+INFO: [Synth 8-4471] merging register 'btn2/ed_clk/ff_cur_reg' into 'btn0/ed_clk/ff_cur_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:50]
+INFO: [Synth 8-4471] merging register 'fnd/rc/ed/ff_cur_reg' into 'btn0/ed_clk/ff_cur_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:50]
+INFO: [Synth 8-4471] merging register 'btn1/ed_clk/ff_old_reg' into 'btn0/ed_clk/ff_old_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:51]
+INFO: [Synth 8-4471] merging register 'btn2/ed_clk/ff_old_reg' into 'btn0/ed_clk/ff_old_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:51]
+INFO: [Synth 8-4471] merging register 'fnd/rc/ed/ff_old_reg' into 'btn0/ed_clk/ff_old_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:51]
+INFO: [Synth 8-4471] merging register 'btn1/ed_clk/ff_cur_reg' into 'btn0/ed_clk/ff_cur_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:50]
+INFO: [Synth 8-4471] merging register 'btn2/ed_clk/ff_cur_reg' into 'btn0/ed_clk/ff_cur_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:50]
+INFO: [Synth 8-4471] merging register 'btn1/ed_clk/ff_old_reg' into 'btn0/ed_clk/ff_old_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:51]
+INFO: [Synth 8-4471] merging register 'btn2/ed_clk/ff_old_reg' into 'btn0/ed_clk/ff_old_reg' [C:/kyh/soc_fan/soc_fan.srcs/sources_1/imports/Downloads/clk.v:51]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[15]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[14]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[13]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[12]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[11]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[10]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[9]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[8]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[7]
+WARNING: [Synth 8-3331] design dht11_cntr has unconnected port led_debug[6]
+INFO: [Synth 8-3886] merging instance 'fan/led_duty_reg[0]' (FDCE) to 'fan/led_duty_reg[4]'
+INFO: [Synth 8-3886] merging instance 'fan/led_duty_reg[1]' (FDCE) to 'fan/led_duty_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fan/led_duty_reg[2]' (FDCE) to 'fan/led_duty_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dht11/dht11/dht11_buffer_tristate_oe_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\timer/counter_sec/bcd10_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\timer/counter_min/bcd10_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1350.168 ; gain = 410.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+------------+---------------+----------------+
+|Module Name    | RTL Object | Depth x Width | Implemented As | 
++---------------+------------+---------------+----------------+
+|cook_timer_pjt | led_reg    | 32x16         | LUT            | 
++---------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1350.168 ; gain = 410.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1442.359 ; gain = 502.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1442.359 ; gain = 502.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1442.359 ; gain = 502.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1442.359 ; gain = 502.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1442.359 ; gain = 502.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1442.359 ; gain = 502.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:53 . Memory (MB): peak = 1442.359 ; gain = 502.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:53 . Memory (MB): peak = 1442.359 ; gain = 502.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   278|
+|3     |LUT1   |    37|
+|4     |LUT2   |   367|
+|5     |LUT3   |   568|
+|6     |LUT4   |   140|
+|7     |LUT5   |    69|
+|8     |LUT6   |   190|
+|9     |FDCE   |   352|
+|10    |FDPE   |    42|
+|11    |FDRE   |    98|
+|12    |IBUF   |     6|
+|13    |IOBUF  |     1|
+|14    |OBUF   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+-------------------------------+------+
+|      |Instance                  |Module                         |Cells |
++------+--------------------------+-------------------------------+------+
+|1     |top                       |                               |  2181|
+|2     |  btn0                    |button_cntr                    |    30|
+|3     |    ed_btn                |edge_detector_p_31             |     3|
+|4     |    ed_clk                |edge_detector_p_32             |     3|
+|5     |  dht11                   |dht11_test_top                 |   374|
+|6     |    dht11                 |dht11_cntr                     |   329|
+|7     |      ed                  |edge_detector_p_28             |   110|
+|8     |      usec_clk            |clock_div_100_29               |    49|
+|9     |        ed                |edge_detector_n_30             |    33|
+|10    |    fnd                   |fnd_cntr_25                    |    45|
+|11    |      rc                  |ring_counter_fnd_26            |    34|
+|12    |        ed                |edge_detector_p_27             |     3|
+|13    |  fan                     |control_led                    |   609|
+|14    |    btn0                  |button_cntr_15                 |    32|
+|15    |      ed_btn              |edge_detector_p_23             |     3|
+|16    |      ed_clk              |edge_detector_p_24             |     5|
+|17    |    btn1                  |button_cntr_16                 |     5|
+|18    |      ed_btn              |edge_detector_p_22             |     4|
+|19    |    btn2                  |button_cntr_17                 |     5|
+|20    |      ed_btn              |edge_detector_p_21             |     4|
+|21    |    ed                    |edge_detector_n_18             |     3|
+|22    |    \pwm_gen[0].pwm_inst  |pwm_100step                    |   172|
+|23    |      ed                  |edge_detector_n_20             |     7|
+|24    |    pwm_motor             |pwm_Nstep_freq                 |   261|
+|25    |      ed                  |edge_detector_n_19             |     6|
+|26    |  timer                   |cook_timer_pjt                 |  1125|
+|27    |    btn0                  |button_cntr_0                  |    39|
+|28    |      ed_btn              |edge_detector_p_13             |    11|
+|29    |      ed_clk              |edge_detector_p_14             |     3|
+|30    |    btn1                  |button_cntr_1                  |     5|
+|31    |      ed_btn              |edge_detector_p_12             |     3|
+|32    |    btn2                  |button_cntr_2                  |     5|
+|33    |      ed_btn              |edge_detector_p                |     3|
+|34    |    counter_min           |counter_bcd_60                 |    33|
+|35    |      ed_clk              |edge_detector_n_11             |     3|
+|36    |    counter_sec           |counter_bcd_60_3               |   131|
+|37    |      ed_clk              |edge_detector_n_10             |     4|
+|38    |    cur_min               |loadable_down_counter_bcd_60   |    33|
+|39    |      ed_clk              |edge_detector_n_9              |     3|
+|40    |    cur_sec               |loadable_down_counter_bcd_60_4 |    28|
+|41    |      ed_clk              |edge_detector_n_8              |     3|
+|42    |    fnd                   |fnd_cntr                       |    35|
+|43    |      rc                  |ring_counter_fnd               |    24|
+|44    |    msec_clk              |clock_div_1000                 |    29|
+|45    |      ed                  |edge_detector_n_7              |     5|
+|46    |    sec_clk               |clock_div_1000_5               |    31|
+|47    |      ed                  |edge_detector_n_6              |     7|
+|48    |    usec_clk              |clock_div_100                  |    20|
+|49    |      ed                  |edge_detector_n                |     4|
++------+--------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:53 . Memory (MB): peak = 1442.359 ; gain = 502.469
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 1442.359 ; gain = 393.148
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:53 . Memory (MB): peak = 1442.359 ; gain = 502.469
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1445.227 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 279 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1445.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+90 Infos, 54 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1445.227 ; gain = 785.836
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1445.227 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/kyh/soc_fan/soc_fan.runs/synth_1/complete.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file complete_utilization_synth.rpt -pb complete_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 14 15:46:01 2024...

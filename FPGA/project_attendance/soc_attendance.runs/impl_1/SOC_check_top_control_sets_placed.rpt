@@ -1,0 +1,110 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Aug 29 18:18:54 2024
+| Host         : DESKTOP-OH running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SOC_check_top_control_sets_placed.rpt
+| Design       : SOC_check_top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    32 |
+|    Minimum number of control sets                        |    32 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   171 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    32 |
+| >= 0 to < 4        |    18 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              17 |            5 |
+| No           | No                    | Yes                    |              28 |           14 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              12 |           10 |
+| Yes          | No                    | Yes                    |             108 |           36 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |               Enable Signal               | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+-------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | uart_receiver/rx_data[0]_i_1_n_0          |                  |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/rx_data[2]_i_1_n_0          |                  |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/rx_data[5]_i_1_n_0          |                  |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/E[0]                        | reset_p_IBUF     |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/rx_data[4]_i_1_n_0          |                  |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/E[8]                        | reset_p_IBUF     |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/E[2]                        | reset_p_IBUF     |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/rx_data[1]_i_1_n_0          |                  |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/E[3]                        | reset_p_IBUF     |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/rx_data[7]_i_1_n_0          |                  |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/rx_data[3]_i_1_n_0          |                  |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/E[1]                        | reset_p_IBUF     |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/E[5]                        | reset_p_IBUF     |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/E[4]                        | reset_p_IBUF     |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/rx_data[6]_i_1_n_0          |                  |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/E[6]                        | reset_p_IBUF     |                1 |              1 |
+|  clk_IBUF_BUFG | uart_receiver/E[7]                        | reset_p_IBUF     |                1 |              1 |
+|  clk_IBUF_BUFG | uart_tx_inst/tx1_out                      | reset_p_IBUF     |                1 |              1 |
+|  clk_IBUF_BUFG | fnd_controller/rc/E[0]                    |                  |                2 |              4 |
+|  clk_IBUF_BUFG | btn1_counter/ed_btn/sel_digit_reg[1][0]   | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | btn1_counter/ed_btn/sel_digit_reg[0][0]   | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | btn1_counter/ed_btn/sel_digit_reg[0]_0[0] | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | btn1_counter/ed_btn/sel_digit_reg[0]_1[0] | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | uart_tx_inst/E[0]                         | reset_p_IBUF     |                1 |              5 |
+|  clk_IBUF_BUFG | uart_receiver/data_out[7]_i_1_n_0         | reset_p_IBUF     |                2 |              8 |
+|  clk_IBUF_BUFG | btn0_counter/ed_clk/E[0]                  | reset_p_IBUF     |                4 |             10 |
+|  clk_IBUF_BUFG | uart_tx_inst/tx_shift_reg                 | reset_p_IBUF     |                3 |             13 |
+|  clk_IBUF_BUFG | uart_tx_inst/busy                         | reset_p_IBUF     |                3 |             14 |
+|  clk_IBUF_BUFG | uart_receiver/clock_count_0               | reset_p_IBUF     |                6 |             16 |
+|  clk_IBUF_BUFG | btn0_counter/ed_btn/ff_old_reg_0[0]       | reset_p_IBUF     |                3 |             16 |
+|  clk_IBUF_BUFG |                                           |                  |                5 |             17 |
+|  clk_IBUF_BUFG |                                           | reset_p_IBUF     |               14 |             28 |
++----------------+-------------------------------------------+------------------+------------------+----------------+
+
+
