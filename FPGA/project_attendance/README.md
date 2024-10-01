@@ -1,6 +1,6 @@
 # BASYS3를 활용한 출석체크 시스템 구축
 
-<img src="pic1.png" alt="이미지 설명" width="300" height="200">
+![완성본](pic1.jpg)
 
 ## 목적
 - UART통신 활용
