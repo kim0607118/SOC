@@ -1,0 +1,3 @@
+﻿  2-2.c
+C:\SOC_workspace\c-lang\20240529\2-2.c(5,8): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  20240529.vcxproj -> C:\SOC_workspace\c-lang\20240529\x64\Debug\20240529.exe

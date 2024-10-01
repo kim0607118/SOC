@@ -1,0 +1,5 @@
+﻿  반복문2.c
+C:\SOC_workspace\c-lang\240521\반복문2.c(4,12): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+C:\SOC_workspace\c-lang\240521\반복문2.c(4,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+C:\SOC_workspace\c-lang\240521\반복문2.c(4,6): warning C4101: 'h' :참조되지 않은 지역 변수입니다.
+  240521.vcxproj -> C:\SOC_workspace\c-lang\240521\x64\Debug\240521.exe
